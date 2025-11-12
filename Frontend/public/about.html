@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About — Blog App</title>
+    <style>
+      body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background:#f7f7f7; }
+      .container { max-width: 900px; margin: 3rem auto; background: #fff; padding: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+      header { margin-bottom: 1rem; }
+      a.button { display:inline-block; padding:0.5rem 1rem; background:#007acc; color:#fff; text-decoration:none; border-radius:4px }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a class="button" href="/">← Home</a>
+      </header>
+
+      <main>
+        <h1>About This Blog App</h1>
+        <p>This is a small MERN-stack blog application used for learning and integration exercises.</p>
+
+        <h2>What you'll find here</h2>
+        <ul>
+          <li>A React frontend served from <code>Frontend/</code></li>
+          <li>An Express + MongoDB backend served from <code>Backend/</code></li>
+          <li>Support for creating posts, uploading images, and user authentication (JWT)</li>
+        </ul>
+
+        <h2>Notes</h2>
+        <p>Because this file is in the <code>public/</code> folder it will be served statically by the React dev server and available at <code>/about.html</code>.</p>
+
+        <p>To view this page while the frontend dev server is running, open:</p>
+        <pre>http://localhost:3000/about.html</pre>
+
+        <p>If you want this page to be part of React routing (no full reload), I can add a React <code>About</code> component and wire up a route instead.</p>
+      </main>
+    </div>
+  </body>
+</html>
